@@ -12,10 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.10.5' # Use a specific version for consistency
+          flutter-version: '3.10.5'
           channel: 'stable'
 
       - name: Get dependencies
