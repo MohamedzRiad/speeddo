@@ -8,31 +8,49 @@
 .buildlog/
 .history
 .svn/
-/build/
 
-# IDE specific
+# IntelliJ
 .idea/
-.vscode/
+*.iml
+*.ipr
+*.iws
+out/
+gen/
 
-# Flutter
+# Flutter/Dart
+.dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
-
-# Dart
-.dart_tool/
+/build/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/ephemeral/
+ios/Flutter/pod_install_log.sh
 
 # Android
-/android/app/build
-/android/.gradle
-/android/build
-/android/app/src/main/assets/flutter_assets
+.gradle/
+/android/key.properties
+/android/local.properties
+/android/app/src/main/assets/flutter_assets/
+android/gradle/
+android/gradlew
+android/gradlew.bat
 
-# iOS
+# Cocoapods
 /ios/Pods/
-/ios/Flutter/App.framework
+/ios/Podfile.lock
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
 
-# Web
-/web/build
+# Build
+/build/
+
+# Generated code
+*.g.dart
+*.freezed.dart
+
+# VS Code
+.vscode/
